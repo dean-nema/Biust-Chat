@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:stuff_neh/config/app_icons.dart';
 import 'package:stuff_neh/pages/home_page.dart';
 import 'package:stuff_neh/pages/profile_page.dart';
 
@@ -19,18 +20,18 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-              icon: SvgPicture.asset('../assets/svg/home.svg'), label: 'Home'),
+              icon: SvgPicture.asset(AppIcons.home), label: 'Home'),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset('../assets/svg/heart.svg'),
+              icon: SvgPicture.asset(AppIcons.favourites),
               label: 'Favorite'),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset('../assets/svg/add.svg'),
+              icon: SvgPicture.asset(AppIcons.addPost),
               label: 'add Post'),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset('../assets/svg/messages.svg'),
+              icon: SvgPicture.asset(AppIcons.messages),
               label: 'messages'),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset('../assets/svg/profile.svg'),
+              icon: SvgPicture.asset(AppIcons.profile),
               label: 'Profile'),
         ],
         currentIndex: currentIndex,

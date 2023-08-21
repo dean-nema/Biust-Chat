@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stuff_neh/components/post_item.dart';
 import 'package:stuff_neh/components/toolbar.dart';
+import 'package:stuff_neh/config/app_icons.dart';
 // import 'package:stuff_neh/styles/app_colors.dart';
 // import 'package:stuff_neh/styles/app_text.dart';
 
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
           onPressed: (){
 
           },
-          icon: SvgPicture.asset('../assets/svg/location.svg'),
+          icon: SvgPicture.asset(AppIcons.location),
         ),
       ],),
       body: ListView.separated(

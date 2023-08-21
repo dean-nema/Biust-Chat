@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:stuff_neh/config/app_icons.dart';
+import 'package:stuff_neh/config/app_routes.dart';
 import 'package:stuff_neh/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -76,7 +78,7 @@ class LoginPage extends StatelessWidget {
                   height: 48,
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.of(context).pushReplacementNamed('/main');
+                        Navigator.of(context).pushReplacementNamed(AppRoutes.main);
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.amber,
@@ -108,7 +110,7 @@ class LoginPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/google.png',
+                          AppIcons.google,
                           width: 22,
                           height: 22,
                         ),
@@ -139,7 +141,7 @@ class LoginPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/twitter.png',
+                          AppIcons.twitter,
                           width: 22,
                           height: 22,
                         ),
