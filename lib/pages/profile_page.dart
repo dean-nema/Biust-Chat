@@ -42,7 +42,9 @@ class ProfilePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          UserAvatar(size: 90,),
+           const UserAvatar(
+              size: 90,
+              ),
           SizedBox(
             height: 24,
           ),
