@@ -9,6 +9,5 @@ class AppColors {
   static const background = Color(0xff1A2947);
   static const black = Color(0xff000000);
   static const white = Color(0xffffffff);
-
-
+  static final fieldColor = const Color.fromARGB(255, 111, 9, 136).withOpacity(0.3);
 }
