@@ -42,7 +42,7 @@ enum Menus { home, favourites, add, messages, profile }
 class MyButtonNavigation extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<Menus> onTap;
-  const MyButtonNavigation(
+   const MyButtonNavigation(
       {super.key, required this.currentIndex, required this.onTap});
 
   @override
