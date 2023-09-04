@@ -42,7 +42,7 @@ enum Menus { home, favourites, add, messages, profile }
 class MyButtonNavigation extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<Menus> onTap;
-   const MyButtonNavigation(
+  const MyButtonNavigation(
       {super.key, required this.currentIndex, required this.onTap});
 
   @override
@@ -66,8 +66,14 @@ class MyButtonNavigation extends StatelessWidget {
                 //Expand is used to eqaully divide things within a container or widget
                 Expanded(
                     child: IconButton(
-                  onPressed: () => onTap(Menus.home),
-                  icon: SvgPicture.asset(AppIcons.home),
+                  onPressed: () =>onTap(Menus.home),
+                 icon: SvgPicture.asset(
+                  AppIcons.home,
+                  colorFilter: 
+                   ColorFilter.mode(
+                    Colors.black, 
+                    BlendMode.srcIn)
+                  ),
                 )),
                 Expanded(
                     child: IconButton(
@@ -100,13 +106,10 @@ class MyButtonNavigation extends StatelessWidget {
                 // padding: const EdgeInsets.all2(16),
                 decoration: BoxDecoration(
                     color: AppColors.primary, shape: BoxShape.circle),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: SvgPicture.asset(AppIcons.addPost),
+                child:  SvgPicture.asset(AppIcons.addPost),
                 ),
               ),
             ),
-          )
         ],
       ),
     );
